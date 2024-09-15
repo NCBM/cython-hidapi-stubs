@@ -1,19 +1,26 @@
 [project]
-# name = "Project name..."
-# version = "Project version, e.g. 0.0.1"
-# description = "Project description..."
-# authors = [
-#     {name = "Author name", email = "Author email"},
-#     ...
-# ]
-# license = {text = "Project license on PyPI, e.g. MIT"}
-# dependencies = ["dependency1...", "dependency2...", ...]
-# requires-python = ">=3.9"
+name = "hidapi-stubs"
+version = "0.14.0"
+description = "Stubs for cython-hidapi"
+authors = [
+    {name = "HivertMoZara", email = "worldmozara@163.com"},
+]
+license = {text = "MIT"}
+dependencies = ["hidapi>=0.14.0,<0.15"]
+requires-python = ">=3.5"
 readme = "README.md"
 
 [project.urls]
-# Homepage = "https://github.com/..."
-# Repository = "https://github.com/..."
+Homepage = "https://github.com/NCBM/cython-hidapi-stubs"
+Repository = "https://github.com/NCBM/cython-hidapi-stubs"
+
+[tool.setuptools.package-data]
+"*" = ["*.pyi"]
 
 [tool.pyright]
-pythonVersion = "3.9"
+pythonVersion = "3.5"
+typeCheckingMode = "strict"
+
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
