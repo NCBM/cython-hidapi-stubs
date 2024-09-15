@@ -1,6 +1,6 @@
 [project]
 name = "hidapi-stubs"
-version = "0.14.0"
+version = "0.14.0.post1"
 description = "Stubs for cython-hidapi"
 authors = [
     {name = "HivertMoZara", email = "worldmozara@163.com"},
